@@ -1,0 +1,224 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "email": "customer1@example.com",
+      "password": "password1",
+      "name": "Nguyễn Khánh Sơn",
+      "phone": "1234567890"
+    },
+    {
+      "id": 2,
+      "email": "customer2@example.com",
+      "password": "password2",
+      "name": "Nguyễn Thế Thiện",
+      "phone": "9876543210"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "email": "employee1@example.com",
+      "firstName": "John",
+      "name": "Phạm Hùng Vĩ",
+      "phone": "1234567890",
+      "role": "manager",
+      "pickupPointId": null,
+      "transitHubId": 1
+    },
+    {
+      "id": 2,
+      "email": "employee2@example.com",
+      "name": "Hoàng Thị Hà Trang",
+      "password": "password2",
+      "phone": "9876543210",
+      "role": "staff",
+      "pickupPointId": null,
+      "transitHubId": 1
+    },
+    {
+      "id": 3,
+      "email": "employee3@example.com",
+      "name": "Nguyễn Tấn Quân",
+      "password": "password3",
+      "phone": "1234567890",
+      "role": "manager",
+      "pickupPointId": 1,
+      "transitHubId": null
+    },
+    {
+      "id": 4,
+      "email": "employee4@example.com",
+      "name": "La Quang Thịnh",
+      "password": "password4",
+      "phone": "9876543210",
+      "role": "staff",
+      "pickupPointId": 1,
+      "transitHubId": null
+    },
+    {
+      "id": 5,
+      "email": "employee5@example.com",
+      "name": "Biện Thị Mỹ Tươi",
+      "password": "password5",
+      "phone": "1234567890",
+      "role": "manager",
+      "pickupPointId": 2,
+      "transitHubId": null
+    },
+    {
+      "id": 6,
+      "email": "employee6@example.com",
+      "name": "Nguyễn Thị Bích Thảo",
+      "password": "password2",
+      "phone": "9876543210",
+      "role": "staff",
+      "pickupPointId": 2,
+      "transitHubId": null
+    },
+    {
+      "id": 7,
+      "email": "employee7@example.com",
+      "name": "Nguyễn Trọng Đạo",
+      "password": "password5",
+      "phone": "1234567890",
+      "role": "manager",
+      "pickupPointId": 3,
+      "transitHubId": null
+    },
+    {
+      "id": 8,
+      "email": "employee8@example.com",
+      "name": "Nguyễn Dương",
+      "password": "password2",
+      "phone": "9876543210",
+      "role": "staff",
+      "pickupPointId": 3,
+      "transitHubId": null
+    },
+    {
+      "id": 9,
+      "email": "employee9@example.com",
+      "name": "Nguyễn Anh Phú",
+      "password": "password5",
+      "phone": "1234567890",
+      "role": "manager",
+      "pickupPointId": null,
+      "transitHubId": 2
+    },
+    {
+      "id": 10,
+      "email": "employee10@example.com",
+      "name": "Phạm Hùng Vĩ",
+      "password": "password2",
+      "phone": "9876543210",
+      "role": "staff",
+      "pickupPointId": null,
+      "transitHubId": 2
+    },
+    {
+      "id": 11,
+      "email": "employee11@example.com",
+      "name": "Nguyễn Kim Duy",
+      "password": "password3",
+      "phone": "1234567890",
+      "role": "shipper",
+      "pickupPointId": null,
+      "transitHubId": null
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "weight": 10,
+      "senderId": 1,
+      "receiverNumber": "9876543210",
+      "receiverAddress": "123 Main St",
+      "pickupFrom": 1,
+      "pickupTo": 3,
+      "packageId": 1,
+      "sendDate": "2022-01-01",
+      "arrivalDate": null,
+      "status": "delivering"
+    },
+    {
+      "id": 2,
+      "weight": 5,
+      "senderId": 2,
+      "receiverNumber": "1234567890",
+      "receiverAddress": "456 Elm St",
+      "pickupFrom": 3,
+      "pickupTo": 2,
+      "packageId": 2,
+      "sendDate": "2022-01-02",
+      "arrivalDate": "2022-01-06",
+      "status": "delivered"
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "quantity": 2,
+      "weight": 20,
+      "pickupFrom": 1,
+      "pickupTo": 3,
+      "transitDate": "2022-01-01",
+      "arrivalDate": "2022-01-05",
+      "shipperId": 1,
+      "status": "delivering1"
+    },
+    {
+      "id": 2,
+      "quantity": 1,
+      "weight": 10,
+      "pickupFrom": 3,
+      "pickupTo": 2,
+      "transitDate": "2022-01-02",
+      "arrivalDate": "2022-01-06",
+      "shipperId": 2,
+      "status": "delivered"
+    }
+  ],
+  "pickupPoints": [
+    {
+      "id": 1,
+      "location": "pickup A",
+      "hubId": 1
+    },
+    {
+      "id": 2,
+      "location": "pickup B",
+      "hubId": 1
+    },
+    {
+      "id": 3,
+      "location": "pickup C",
+      "hubId": 2
+    },
+    {
+      "id": 4,
+      "location": "pickup D",
+      "hubId": 2
+    },
+    {
+      "id": 5,
+      "location": "pickup E",
+      "hubId": 3
+    }
+  ],
+  "transitHubs": [
+    {
+      "id": 1,
+      "location": "Hub A"
+    },
+    {
+      "id": 2,
+      "location": "Hub B"
+    },
+    {
+      "id": 3,
+      "location": "Hub C"
+    }
+  ]
+}
+

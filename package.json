@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "compile": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "typescript": "^5.3.3"
   },
